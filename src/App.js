@@ -52,7 +52,10 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Infinity Clicks</Title>
+        <Title>
+          <h1>Infinity Clicks</h1>
+          <p>Select all of the heroes, but don't select the same one twice!</p>
+        </Title>
         <Score total={this.state.score} goal={12} status={this.state.status} />
         {this.state.characters.map(character => (
           <CharCard
